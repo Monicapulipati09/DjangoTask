@@ -1,6 +1,6 @@
 from django.conf import settings
 from django import forms
-from .models import Articles
+from .models import Article
 
 class ArticlesForm(forms.ModelForm):
     """
@@ -8,7 +8,7 @@ class ArticlesForm(forms.ModelForm):
     """
 
     class Meta:
-        model = Articles
+        model = Article
         fields = ('Author',)
 
     def __init__(self, *args, **kwargs):

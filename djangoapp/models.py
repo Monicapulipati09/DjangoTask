@@ -3,7 +3,7 @@ from django.conf import settings
 from django.db import models
 
 
-class Articles(models.Model):
+class Article(models.Model):
     """
     This model has a Char field to store Author name, JSONField title for storing the translated titles, as well as created and updated fields for
     storing the creation and last modification timestamps, respectively.

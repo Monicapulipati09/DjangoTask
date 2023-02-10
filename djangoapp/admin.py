@@ -2,10 +2,10 @@ from django import forms
 from django.conf import settings
 from django.contrib import admin
 from .forms import ArticlesForm
-from .models import Articles
+from .models import Article
 
 
-@admin.register(Articles)
+@admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
     form = ArticlesForm
     list_display = ['Author', 'title_display', 'created', 'updated']
