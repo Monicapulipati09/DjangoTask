@@ -27,5 +27,5 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
-admin.site.site_title = 'Monica Task MS'
-admin.site.site_header = 'Monica Task MS'
+admin.site.site_title = 'Articles Info'
+admin.site.site_header = 'Articles Info'
